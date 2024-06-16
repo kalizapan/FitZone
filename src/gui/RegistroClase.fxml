@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1024.0" style="-fx-background-color: #212F3C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegistroClaseController">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#dddddd" height="466.0" layoutX="129.0" layoutY="88.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="788.0" />
+      <Label layoutX="416.0" layoutY="130.0" text="Registrar clase" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="240.0" text="Tipo" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="562.0" layoutY="240.0" text="Capacidad" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="303.0" text="Hora inicio" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldCapacidad" layoutX="555.0" layoutY="262.0" prefHeight="25.0" prefWidth="294.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtfieldNombre" layoutX="182.0" layoutY="201.0" prefHeight="25.0" prefWidth="672.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="188.0" layoutY="370.0" text="Entrenador" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonRegistrar" layoutX="488.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleRegistrarClase" style="-fx-background-color: #339999;" text="Registrar" textFill="WHITE" />
+      <Label layoutX="192.0" layoutY="175.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldHoraInicio" layoutX="382.0" layoutY="329.0" prefHeight="25.0" prefWidth="136.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="189.0" layoutY="302.0" text="Fecha de inicio" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dtpickerFechaDeInicio" layoutX="183.0" layoutY="328.0" />
+      <Label layoutX="554.0" layoutY="301.0" text="Hora fin" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldHoraFin" layoutX="548.0" layoutY="327.0" prefHeight="25.0" prefWidth="136.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtfieldPrecio" layoutX="710.0" layoutY="324.0" prefHeight="25.0" prefWidth="136.0" style="-fx-background-radius: 10;" />
+      <ChoiceBox fx:id="chboxTipo" layoutX="184.0" layoutY="261.0" prefHeight="25.0" prefWidth="346.0" />
+      <ChoiceBox fx:id="chboxEntrenador" layoutX="184.0" layoutY="395.0" prefHeight="25.0" prefWidth="346.0" />
+      <Label layoutX="718.0" layoutY="302.0" text="Precio" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

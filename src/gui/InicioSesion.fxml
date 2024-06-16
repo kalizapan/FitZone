@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1024.0" style="-fx-background-color: #212F3C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InicioSesionController">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#dddddd" height="386.0" layoutX="283.0" layoutY="181.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="524.0" />
+      <Label layoutX="422.0" layoutY="208.0" text="Inicio de sesión" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="297.0" text="Correo" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="354.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="correoTextField" layoutX="411.0" layoutY="293.0" prefHeight="25.0" prefWidth="316.0" style="-fx-background-radius: 10;" />
+      <PasswordField fx:id="contraseñaTextField" layoutX="412.0" layoutY="350.0" prefHeight="25.0" prefWidth="316.0" style="-fx-background-radius: 10;" /> <!-- Corrección del tipo de campo -->
+      <Label layoutX="402.0" layoutY="101.0" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="ingresarButton" layoutX="516.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleIniciarSesion" style="-fx-background-color: #339999;" text="Ingresar" textFill="WHITE" />
+      <Label layoutX="383.0" layoutY="488.0" text="¿No tienes una cuenta?" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="crearCuentaButton" layoutX="546.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleRegistrarse" style="-fx-background-color: #339999;" text="Crear una cuenta" textFill="WHITE" />
+   </children>
+</AnchorPane>

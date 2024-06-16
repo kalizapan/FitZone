@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1024.0" style="-fx-background-color: #212F3C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdministradorController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="585.0" layoutX="-2.0" layoutY="88.0" stroke="WHITE" strokeType="INSIDE" width="160.0" />
+      <Button fx:id="btnClases" layoutX="13.0" layoutY="288.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #ffffff;" styleClass="left-button" text="Clases" textFill="#167780">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMiembros" layoutX="26.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #ffffff;" styleClass="left-button" text="Miembros" textFill="#167780">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEntrenadores" layoutX="27.0" layoutY="339.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" styleClass="left-button" text="Entrenadores" textFill="#167780">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      
+      <!-- Tabla de Miembros -->
+      <TableView fx:id="tableMiembros" layoutX="238.0" layoutY="170.0" prefHeight="436.0" prefWidth="727.0" style="-fx-background-radius: 10; -fx-background-color: #3f4b54; -fx-border-radius: 10; -fx-text-fill-color: #000000;" visible="false">
+         <columns>
+            <TableColumn fx:id="colNombreMiembro" prefWidth="200.0" style="-fx-background-radius: 10;" text="Nombre">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nombre" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colApellidoPaternoMiembro" prefWidth="200.0" style="-fx-background-radius: 10;" text="Apellido Paterno">
+               <cellValueFactory>
+                  <PropertyValueFactory property="apellidoPaterno" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colApellidoMaternoMiembro" prefWidth="200.0" style="-fx-background-radius: 10;" text="Apellido Materno">
+               <cellValueFactory>
+                  <PropertyValueFactory property="apellidoMaterno" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+
+      <!-- Tabla de Clases -->
+      <TableView fx:id="tableClases" layoutX="238.0" layoutY="170.0" prefHeight="436.0" prefWidth="727.0" style="-fx-background-radius: 10; -fx-background-color: #3f4b54; -fx-border-radius: 10; -fx-text-fill-color: #000000;" visible="false">
+         <columns>
+            <TableColumn fx:id="colNombreClase" prefWidth="123.33332824707031" style="-fx-background-radius: 10;" text="Nombre">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nombre" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colTipoClase" prefWidth="123.33332824707031" style="-fx-background-radius: 10;" text="Tipo">
+               <cellValueFactory>
+                  <PropertyValueFactory property="tipo" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colCapacidadClase" prefWidth="123.33332824707031" style="-fx-background-radius: 10;" text="Capacidad">
+               <cellValueFactory>
+                  <PropertyValueFactory property="capacidad" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colHoraInicioClase" prefWidth="123.33332824707031" style="-fx-background-radius: 10;" text="Hora Inicio">
+               <cellValueFactory>
+                  <PropertyValueFactory property="horaInicio" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colHoraFinClase" prefWidth="123.33332824707031" style="-fx-background-radius: 10;" text="Hora Fin">
+               <cellValueFactory>
+                  <PropertyValueFactory property="horaFin" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colPrecioClase" prefWidth="123.33332824707031" style="-fx-background-radius: 10;" text="Precio">
+               <cellValueFactory>
+                  <PropertyValueFactory property="precio" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+
+     <!-- Tabla de Entrenadores -->
+        <TableView fx:id="tableEntrenadores" layoutX="238.0" layoutY="170.0" prefHeight="436.0" prefWidth="727.0" style="-fx-background-radius: 10; -fx-background-color: #3f4b54; -fx-border-radius: 10; -fx-text-fill-color: #000000;" visible="false">
+           <columns>
+              <TableColumn fx:id="colNombreEntrenador" prefWidth="200.0" style="-fx-background-radius: 10;" text="Nombre">
+                 <cellValueFactory>
+                    <PropertyValueFactory property="nombre" />
+                 </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="colApellidoPaternoEntrenador" prefWidth="200.0" style="-fx-background-radius: 10;" text="Apellido Paterno">
+                 <cellValueFactory>
+                    <PropertyValueFactory property="apellidoPaterno" />
+                 </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="colApellidoMaternoEntrenador" prefWidth="200.0" style="-fx-background-radius: 10;" text="Apellido Materno">
+                 <cellValueFactory>
+                    <PropertyValueFactory property="apellidoMaterno" />
+                 </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="colEspecialidadEntrenador" prefWidth="200.0" style="-fx-background-radius: 10;" text="Especialidad">
+                 <cellValueFactory>
+                    <PropertyValueFactory property="especialidad" />
+                 </cellValueFactory>
+              </TableColumn>
+           </columns>
+        </TableView>
+
+
+      <Button fx:id="btnCerrarSesion" layoutX="3.0" layoutY="617.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="35.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Cerrar sesión" textFill="#167780">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Circle fill="#212f3c" layoutX="76.0" layoutY="169.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="76.0" layoutY="157.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="WHITE" layoutX="76.0" layoutY="198.0" radiusX="35.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#167780" height="93.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1024.0" />
+      
+      <Button fx:id="btnAddClase" layoutX="930.0" layoutY="600.0" mnemonicParsing="false" onAction="#openRegistrarClase" style="-fx-background-color: #339999; -fx-background-radius: 45;" text="+" textFill="WHITE" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      
+      <Button fx:id="btnAddEntrenador" layoutX="930.0" layoutY="600.0" mnemonicParsing="false" onAction="#openRegistrarEntrenador" style="-fx-background-color: #339999; -fx-background-radius: 45;" text="+" textFill="WHITE" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      
+      <Label layoutX="235.0" layoutY="124.0" text="Bienvenido, administrador" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Semilight" size="24.0" />
+         </font>
+      </Label>
+      
+      <!-- MenuButton para Miembros -->
+      <MenuButton fx:id="menuMiembros" layoutX="761.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" visible="false">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Filtrar por activo" />
+            <MenuItem mnemonicParsing="false" text="Filtrar por inactivo" />
+         </items>
+      </MenuButton>
+
+      <!-- MenuButton para Clases -->
+      <MenuButton fx:id="menuClases" layoutX="761.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" visible="false">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Filtrar por disponibles" />
+            <MenuItem mnemonicParsing="false" text="Filtrar por llenas" />
+         </items>
+      </MenuButton>
+
+      <!-- MenuButton para Entrenadores -->
+      <MenuButton fx:id="menuEntrenadores" layoutX="761.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" visible="false">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Filtrar por disponibles" />
+            <MenuItem mnemonicParsing="false" text="Filtrar por ocupados" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

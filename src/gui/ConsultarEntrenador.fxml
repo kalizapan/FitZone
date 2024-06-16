@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="940.0" style="-fx-background-color: #212F3C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConsultarEntrenadorController">
+   <children>
+      <Label layoutX="78.0" layoutY="151.0" text="Nombre(s)" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="80.0" layoutY="178.0" text="nombre" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldNombre" layoutX="68.0" layoutY="175.0" prefHeight="25.0" prefWidth="451.0" visible="false" />
+      
+      <Button fx:id="buttonDarBaja" layoutX="656.0" layoutY="307.0" mnemonicParsing="false" onAction="#darBajaEntrenador" prefHeight="35.0" prefWidth="190.0" text="Dar de baja" textFill="#167780">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#167780" height="75.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="944.0" />
+      
+      <Label layoutX="76.0" layoutY="117.0" text="Información del entrenador" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="52.0" layoutY="19.0" text="Registro de entrenador" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Semilight" size="32.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="buttonActualizar" layoutX="656.0" layoutY="170.0" mnemonicParsing="false" onAction="#mostrarBotonAceptar" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: #339999;" text="Actualizar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      
+      <Button fx:id="buttonAceptar" layoutX="656.0" layoutY="215.0" mnemonicParsing="false" onAction="#actualizarEntrenador" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: #339999;" text="Aceptar" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      
+      <Label layoutX="73.0" layoutY="214.0" text="Apellido paterno" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApellidoPaterno" layoutX="75.0" layoutY="241.0" text="apellidoPaterno" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldApellidoPaterno" layoutX="69.0" layoutY="240.0" prefHeight="25.0" prefWidth="448.0" visible="false" />
+      
+      <Label layoutX="74.0" layoutY="277.0" text="Apellido materno" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApellidoMaterno" layoutX="76.0" layoutY="304.0" text="apellidoMaterno" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldApellidoMaterno" layoutX="67.0" layoutY="303.0" prefHeight="25.0" prefWidth="452.0" visible="false" />
+      
+      <Label layoutX="77.0" layoutY="341.0" text="Especialidad" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEspecialidad" layoutX="79.0" layoutY="367.0" text="especialidad" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldEspecialidad" layoutX="66.0" layoutY="366.0" prefHeight="25.0" prefWidth="451.0" visible="false" />
+
+      <Label layoutX="77.0" layoutY="400.0" text="Fecha de Ingreso" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFechaIngreso" layoutX="79.0" layoutY="426.0" text="fechaIngreso" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      
+      <Rectangle fx:id="fondoRectangle1" arcHeight="30.0" arcWidth="30.0" fill="#dddddd" height="25.0" layoutX="66.0" layoutY="175.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" visible="true" width="451.0" />
+      <Rectangle fx:id="fondoRectangle2" arcHeight="30.0" arcWidth="30.0" fill="#dddddd" height="25.0" layoutX="69.0" layoutY="240.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" visible="true" width="448.0" />
+      <Rectangle fx:id="fondoRectangle3" arcHeight="30.0" arcWidth="30.0" fill="#dddddd" height="25.0" layoutX="67.0" layoutY="303.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" visible="true" width="452.0" />
+      <Rectangle fx:id="fondoRectangle4" arcHeight="30.0" arcWidth="30.0" fill="#dddddd" height="25.0" layoutX="66.0" layoutY="366.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" visible="true" width="451.0" />
+   </children>
+</AnchorPane>
